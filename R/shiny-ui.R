@@ -426,7 +426,7 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 		if(identical(title, NULL) || identical(title, "")) NULL else h5(title),
 
 		div(id = qq("@{heatmap_id}_heatmap_resize"),
-			plotOutput(qq("@{heatmap_id}_heatmap"), height = height, width = width,
+			plotOutput(qq("@{heatmap_id}_heatmap"), height = 600, width = 1200,
 				        brush = brush,
 				        click = click, dblclick = dblclick, hover = hover
 			),
