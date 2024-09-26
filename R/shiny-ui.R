@@ -489,8 +489,8 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 					),
 					tabPanel(HTML("<i class='fa fa-expand-arrows-alt'></i>"),
 						div(id = qq('@{heatmap_id}_tabs-resize'),
-							numericInput(qq("@{heatmap_id}_heatmap_input_width"), "Box width", 0),
-							numericInput(qq("@{heatmap_id}_heatmap_input_height"), "Box height", 0),
+							numericInput(qq("@{heatmap_id}_heatmap_input_width"), "Box width", 1200),
+							numericInput(qq("@{heatmap_id}_heatmap_input_height"), "Box height", 600),
 							actionButton(qq("@{heatmap_id}_heatmap_input_size_button"), "Change image size")
 						)
 					)
