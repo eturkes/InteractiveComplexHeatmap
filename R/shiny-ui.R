@@ -499,6 +499,8 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 				do.call(tabsetPanel, tbl)
 			},
 			tags$script(HTML(qq("
+				$('#@{heatmap_id}_heatmap_input_width').val($('#@{heatmap_id}_heatmap').width());
+				$('#@{heatmap_id}_heatmap_input_height').val($('#@{heatmap_id}_heatmap').height());
 			")))
 		)	
 	)
