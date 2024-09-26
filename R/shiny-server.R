@@ -374,8 +374,8 @@ makeInteractiveComplexHeatmap = function(input, output, session, ht_list,
 
 		req(heatmap_initialized())
 
-		width = input[[qq("@{heatmap_id}_heatmap_resize_width")]]
-	    height = input[[qq("@{heatmap_id}_heatmap_resize_height")]]
+		width = 1200
+	    height = 600
 
 		output[[qq("@{heatmap_id}_heatmap")]] = renderPlot({
 
@@ -389,7 +389,7 @@ makeInteractiveComplexHeatmap = function(input, output, session, ht_list,
 
 			message(qq("[@{Sys.time()}] make the original heatmap and calculate positions (device size: @{width}x@{height} px)."))
 			session$sendCustomMessage(qq("@{heatmap_id}_remove_brush"), "")
-		}, width = width, height = height, res = res)
+		}, width = 1200, height = 600, res = res)
 	})
 
 	###############################################################
@@ -453,7 +453,7 @@ makeInteractiveComplexHeatmap = function(input, output, session, ht_list,
 	    	message(qq("[@{Sys.time()}] Resizing the original heatmap (device size: @{width}x@{height} px)."))
 
 	    	session$sendCustomMessage(qq("@{heatmap_id}_remove_brush"), "")
-	    }, width = width, height = height, res = res)
+	    }, width = 1200, height = 600, res = res)
 		
 	})
 
