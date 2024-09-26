@@ -434,10 +434,6 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 				$('#@{heatmap_id}_heatmap').html('<p style=\"position:relative;top:50%;\">Making heatmap, please wait...</p>');
 			")))
 		),
-		tags$script(HTML(qq('
-			$("#@{heatmap_id}_heatmap_resize").css("width", $("#@{heatmap_id}_heatmap").width() + 4);
-			$("#@{heatmap_id}_heatmap_resize").css("height", $("#@{heatmap_id}_heatmap").height() + 4);
-		'))),
 		div(id = qq("@{heatmap_id}_heatmap_control"),
 			style = "display:none;",
 			{
@@ -503,8 +499,6 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 				do.call(tabsetPanel, tbl)
 			},
 			tags$script(HTML(qq("
-				$('#@{heatmap_id}_heatmap_download_image_width').val($('#@{heatmap_id}_heatmap').width());
-				$('#@{heatmap_id}_heatmap_download_image_height').val($('#@{heatmap_id}_heatmap').height());
 				$('#@{heatmap_id}_heatmap_input_width').val($('#@{heatmap_id}_heatmap').width());
 				$('#@{heatmap_id}_heatmap_input_height').val($('#@{heatmap_id}_heatmap').height());
 			")))
