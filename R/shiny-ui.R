@@ -431,7 +431,7 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 				        click = click, dblclick = dblclick, hover = hover
 			),
 			tags$script(HTML(qq("
-				$('#@{heatmap_id}_heatmap').html('<p style=\"position:relative;top:50%;\">Making heatmap, please wait...</p>');
+				$('#@{heatmap_id}_heatmap').html('<p style=\"position:relative;top:50%;\">Please press Initialise button to see heatmaps.</p>');
 			")))
 		),
 		div(id = qq("@{heatmap_id}_heatmap_control"),
