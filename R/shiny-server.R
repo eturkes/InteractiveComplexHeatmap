@@ -438,8 +438,8 @@ makeInteractiveComplexHeatmap = function(input, output, session, ht_list,
 
 		req(heatmap_initialized())
 
-		width = input[[qq("@{heatmap_id}_heatmap_input_width")]]
-	    height = input[[qq("@{heatmap_id}_heatmap_input_height")]]
+		width = 1200
+	    height = 600
 
 		output[[qq("@{heatmap_id}_heatmap")]] = renderPlot({
 			
