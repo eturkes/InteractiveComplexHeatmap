@@ -439,7 +439,6 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 				$('#@{heatmap_id}_heatmap_input_height').val($('#@{heatmap_id}_heatmap').height());
 			")))
 		)	
-	)
 	main_heatmap_ui
 }
 
