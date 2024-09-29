@@ -426,7 +426,7 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 		if(identical(title, NULL) || identical(title, "")) NULL else h5(title),
 
 		div(id = qq("@{heatmap_id}_heatmap_resize"),
-			plotOutput(qq("@{heatmap_id}_heatmap"), height = 600, width = 1200,
+			plotOutput(qq("@{heatmap_id}_heatmap"), height = 425, width = 1150,
 				        brush = brush,
 				        click = click, dblclick = dblclick, hover = hover
 			),
@@ -485,8 +485,8 @@ originalHeatmapOutput = function(heatmap_id, title = NULL,
 					),
 					tabPanel(HTML("<i class='fa fa-expand-arrows-alt'></i>"),
 						div(id = qq('@{heatmap_id}_tabs-resize'),
-							numericInput(qq("@{heatmap_id}_heatmap_input_width"), "Box width", 1200),
-							numericInput(qq("@{heatmap_id}_heatmap_input_height"), "Box height", 600),
+							numericInput(qq("@{heatmap_id}_heatmap_input_width"), "Box width", 1150),
+							numericInput(qq("@{heatmap_id}_heatmap_input_height"), "Box height", 425),
 							actionButton(qq("@{heatmap_id}_heatmap_input_size_button"), "Change image size")
 						)
 					)
